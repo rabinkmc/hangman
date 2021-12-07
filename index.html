@@ -14,19 +14,24 @@
   </head>
   <body>
     <div id="main" class="container">
-      <div id="game"></div>
-      <form id="inputform" action="#">
-        <label for="input" class="form-label">Enter alphabet only:</label>
-        <input type="text" id="input" name="input" pattern="[A-Za-z]{1}" />
-        <input
-          type="submit"
-          value="enter"
-          class="btn btn-primary"
-          onclick="playsound()"
-        />
-      </form>
-    </div>
-    <script type="module" src="main.js"></script>
+		<div class="row">
+			<div class="mx-auto text-center btn btn-danger" style="width: 100px; height: 1O0px" id="gameStart" >New Game</div>
+		</div>
+		<div class ="row">
+		  <div id="game"></div>
+		</div>
+		<div class ="row">
+		  <div class="mx-auto text-center" id="usermenu">
+			<label for="input" class="form-label">Enter alphabet only:</label>
+			<input type="textArea" id="input" name="input" pattern="[A-Za-z]" maxlength="1" />
+			<button type="submit" id="btn" class="btn btn-primary">btn</button>
+		  </div>
+		</div>
+		<div class="row">
+			<div id="result">
+			</div>
+		</div>
+    <script src="main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
